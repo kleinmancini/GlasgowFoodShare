@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+Author: Klein Cairney
+Student ID:S2140472
+-->
+ 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Browse Items | Glasgow Food Share</title>
+    <!-- Bootstrap CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for navbar -->
+    <link href="/css/navbar.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="/js/bootstrap.bundle.min.js"></script>   
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+    <div class="container">
+        <a class="navbar-brand" href="/">Glasgow Food Share</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-success" href="/addItems">Add Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-success" href="/browse">Browse All Items</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <hr class="dropdown-divider">
+                </li>
+                <form class="d-flex" action="/logout" method="get">
+                    <button class="btn btn-danger" type="submit">Logout</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">About Glasgow Food Share</h1>
+                <hr class="my-4"> <!-- Visible line spacer -->
+                <p class="lead text-muted">Glasgow Food Share is an initiative developed by The Scottish Pantry Network (TSPN) to address the growing food insecurity crisis in our community. We work with local food pantries to connect people who have surplus fruits and vegetables with those in need.</p>
+                
+                <h2 class="fw-light">Our Mission</h2>
+                <hr class="my-4"> <!-- Visible line spacer -->
+                <p class="lead text-muted">Our mission is to reduce food waste and support local communities by facilitating the sharing of surplus food items. By connecting individuals who have food to donate with local food pantries, we aim to provide access to nutritious food for those experiencing food insecurity.</p>
+                
+                <h2 class="fw-light">How It Works</h2>
+                <hr class="my-4"> <!-- Visible line spacer -->
+                <p class="lead text-muted">Individuals with surplus fruits and vegetables can register with Glasgow Food Share and post details of the food they want to share, including its availability and expiration date. Pantries can then browse available items, select those they want, and arrange for pickup at a local drop-off point.</p>
+                
+                <h2 class="fw-light">Get Involved</h2>
+                <hr class="my-4"> <!-- Visible line spacer -->
+                <p class="lead text-muted">Whether you have food to donate or you're a local pantry looking to access fresh produce, Glasgow Food Share welcomes your participation. Register today to start sharing and accessing nutritious food in your community.</p>
+                
+                <!-- Reserved space for the image -->
+                <div class="mt-5">
+                    <!-- Placeholder for the image -->
+                    <img src="/images/pantry.jpg" alt="Placeholder Image" class="img-fluid" id="about-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer class="text-body-secondary py-5 border-top">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="/about">Back to top</a>
+            </p>
+            <p class="mb-1">This Project was completed by Klein Cairney Student ID: S2140472</p>
+            <p class="mb-0">Admin Dashboard: <a href="/admin">Admin Link</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

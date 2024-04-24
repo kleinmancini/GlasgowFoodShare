@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+Author: Klein Cairney
+Student ID:S2140472
+-->
+ 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Browse Items | Glasgow Food Share</title>
+    <!-- Bootstrap CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS for navbar -->
+    <link href="/css/navbar.css" rel="stylesheet">
+    <!-- Custom CSS for food item cards -->
+    <link href="/css/browse.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="/js/bootstrap.bundle.min.js"></script>   
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+    <div class="container">
+        <a class="navbar-brand" href="/">Glasgow Food Share</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-success" href="/addItems">Add Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-success" href="/browse">Browse All Items</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <hr class="dropdown-divider">
+                </li>
+                <form class="d-flex" action="/logout" method="get">
+                    <button class="btn btn-danger" type="submit">Logout</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+<main>
+
+
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Contact Us</h1>
+                <p class="lead text-muted">Have a question or feedback? Reach out to us using the form below:</p>
+                <!-- Display the success message -->
+                {{#successMessage}}
+                <div class="alert alert-success" role="alert">
+                    {{successMessage}}
+                </div>
+                {{/successMessage}}
+            </div>
+        </div>
+    </section>
+
+<div class="album py-5 bg-light">
+    <div class="col-md-6 mx-auto"> <!-- Centered container -->
+        <form action="/send-message" method="post">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="name" name="name" placeholder=" " required minlength="3" maxlength="100">
+                <label for="name">Your Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="email" name="email" placeholder=" " required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <label for="email">Your Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" id="message" name="message" placeholder=" " rows="5" required minlength="10" maxlength="1000"></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</div>
+
+</main>
+
+
+
+    <footer class="text-body-secondary py-5 border-top">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="/browse">Back to top</a>
+            </p>
+            <p class="mb-1">This Project was completed by Klein Cairney Student ID: S2140472</p>
+            <p class="mb-0">Admin Dashboard: <a href="/admin">Admin Link</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

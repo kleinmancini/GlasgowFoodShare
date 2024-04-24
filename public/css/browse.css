@@ -1,0 +1,22 @@
+.status-indicator {
+    padding: 0.375rem 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
+    color: white; /* Ensures text is white */
+    text-align: center;
+    font-weight: bold; /* Make status text bold */
+}
+
+.card-title, .card-text, .text-muted {
+    color: black; /* or any color that contrasts well with your card background */
+}
+
+/* Additional styles to ensure the background of card is not transparent */
+.card {
+    background: white; /* or any preferred color for card's background */
+}
+
+/* You might want to add a default style for when no status color is provided */
+.default-status {
+    background-color: #6c757d; /* Default grey color */
+}
