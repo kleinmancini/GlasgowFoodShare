@@ -1,0 +1,3 @@
+{"name":"testUser","email":"test@test.com","message":"Hello, testing my messages in the admin suite","userId":"hjbcgTYg9FygJXiH","date":{"$$date":1713929166417},"_id":"JY1lEEzHuActNTJO"}
+{"name":"testUser","email":"test@test.com","message":"testing contact form submission","userId":"hjbcgTYg9FygJXiH","date":{"$$date":1713929789151},"_id":"rldnmcstNz1lN79o"}
+{"name":"anotherUser","email":"user@user.com","message":"Hi there, love the site!","userId":"hnMh8OvSSWaycxRu","date":{"$$date":1714003516200},"_id":"gRQpdjQCGC5GRylO"}

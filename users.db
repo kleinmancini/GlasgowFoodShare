@@ -1,1 +1,3 @@
 {"username":"admin","password":"$2a$10$w71aW6oXndmkyaE60P50Vep0AFu2gW1Yy/0ZXQQZBapoC08R/OVFC","email":"admin@admin.com","isAdmin":true,"_id":"HWjyxHrw8BsATSOg"}
+{"username":"testUser","password":"$2a$10$if8W7MdxpHycyFNrkVTDCO0Da7tsg/RlDo8jeacPtgmKFwwqO8m6u","email":"test@test.com","isAdmin":false,"_id":"hjbcgTYg9FygJXiH"}
+{"username":"anotherUser","password":"$2a$10$hPWw64xRuyVKWajRtavrNeqXIk/FBDjognZM/mPsxZJzS5aTO94ui","email":"user@user.com","isAdmin":false,"_id":"hnMh8OvSSWaycxRu"}
